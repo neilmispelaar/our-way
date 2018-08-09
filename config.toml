@@ -6,7 +6,7 @@ title = "My New Hugo Site"
 
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "sitemap"]
 
-theme = "cdts-canada.ca"
+theme = "cdts.canada.ca"
 
 defaultContentLanguageInSubdir = true
 
