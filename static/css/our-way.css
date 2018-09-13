@@ -1,0 +1,1756 @@
+/* 
+ * Our Way Campaign CSS 
+ * Refactored and Updated: 09.2018
+ * Note: Changed the main page class to enable refactoring from esdcroot to youthcampaign 
+ */ 
+
+
+/* ==========================================================================
+   Scope Class   
+   ========================================================================== */
+.esdcyouthcampaign { 
+    /*background: #F9F9F9*/
+    color: #2D2B2C !important;
+}
+
+
+/* ==========================================================================
+   Button Classes   
+   ========================================================================== */
+.esdcyouthcampaign .btn-esdcyouthcampaign { 
+    background-color: #000000;
+    color: #ffffff !important;
+    border-radius: 0;
+}
+
+.esdcyouthcampaign a.btn-esdcyouthcampaign:hover, 
+.esdcyouthcampaign a.btn-esdcyouthcampaign:focus { 
+    background-color: #DB277B;
+    transition: 0.2s ease-in; 
+}
+
+/* ==========================================================================
+   Utility Classes   
+   ========================================================================== */
+.esdcyouthcampaign .text-bg-white { 
+    background-color: #F9F9F9 !important;
+    display: inline-block; 
+}
+
+
+/* ==========================================================================
+   Header Stacking Classes
+   ========================================================================== */
+.esdcyouthcampaign .heading-stack span {
+    display: table;
+    font-size: 140%;
+}
+
+/* ==========================================================================
+   Trending Opportunities Classes   
+   ========================================================================== */
+
+.esdcyouthcampaign .trending-opportunities-background { 
+
+   background: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/home-trending.png');
+   background-repeat: no-repeat;
+   background-position-y: top;
+   background-position-x: 15px;
+   background-size: 60%;
+}
+
+
+
+.esdcyouthcampaign ul.trending-opportunities {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+    .esdcyouthcampaign .trending-opportunities-background { 
+        background: none;
+    }
+
+}
+
+/* ==========================================================================
+   HR classes
+   ========================================================================== */
+.esdcyouthcampaign .hr {
+    height: 40px;
+    background: repeating-linear-gradient(-45deg, #D4D4D4, transparent 1px, #D4D4D4 2px);
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/pinangle.png');
+    margin: 0px;
+}
+
+/* ==========================================================================
+   Youth Campaign Cards
+   ========================================================================== */
+.esdcyouthcampaign .youth-campaign-link-card {
+    text-align: center;
+    padding: 0px;
+    margin:0px;
+}
+
+.esdcyouthcampaign .youth-campaign-link-card h3 {
+    font-size: 180%;
+    margin: 0;
+}
+
+
+.esdcyouthcampaign .youth-campaign-link-card svg {
+    width: 150px;
+}
+
+.esdcyouthcampaign .youth-campaign-link-card a {
+    color: #ffffff !important;
+    padding: 50px;
+    background-color: none;
+    display: block;
+    text-decoration: none;
+}
+
+.esdcyouthcampaign .youth-campaign-link-card.learn {
+    background-color: #063851;
+}
+
+.esdcyouthcampaign .youth-campaign-link-card.train {
+    background-color: #348371;
+}
+
+.esdcyouthcampaign .youth-campaign-link-card.work {
+    background-color: #B4610E;
+}
+
+.esdcyouthcampaign .youth-campaign-link-card.serve {
+    background-color: #841B35;
+}
+
+.esdcyouthcampaign .youth-campaign-link-card a:hover {
+    background-color: #2D2B2C;
+    text-decoration: underline;
+    transition: 0.2s ease-in;
+}
+
+
+/* ==========================================================================
+   Stay Connected Box   
+   ========================================================================== */
+.esdcyouthcampaign .stayconnected { 
+    background-color: #2D2B2C;
+    color: #ffffff;
+    padding: 80px 0px 80px 0px;
+}
+
+.esdcyouthcampaign .stayconnected h2 { 
+    margin-top: 0px;
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+}
+
+.esdcyouthcampaign .stayconnected a { 
+    color: #ffffff !important;
+}
+
+.esdcyouthcampaign .stayconnected a:hover { 
+    background-color: #DB277B;
+    transition: 0.4s ease-in;
+}
+
+.esdcyouthcampaign .stayconnected a:focus { 
+    background-color: #DB277B;
+    transition: 0.2s ease-in;
+}
+
+
+
+
+
+
+
+
+/*
+Copy of Our Way's default AEM CSS styles, followed by additional custom CSS
+
+TODO:
+Consolidate both sets of CSS in the future
+*/
+
+/*
+Youth Campaign ("On our Way") Styles for ESDC
+*/	
+/* Version May 11 3:00 PM */ 
+
+.esdcroot {
+  background: #F9F9F9;
+  color: #2D2B2C;
+}
+@media (min-width: 1200px) {
+  .esdcroot {
+    width: 1140px;
+  }
+}
+.esdcroot .overlay-lnk {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+.esdcroot #mobile-menu-panel {
+  position: absolute;
+  height: auto;
+}
+.esdcroot #mobile-menu-panel .modal-header {
+  display: none;
+}
+.esdcroot #mobile-menu-panel .modal-footer {
+  display: none;
+}
+.esdcroot #mobile-menu-panel .modal-body {
+  padding: 0;
+}
+.esdcroot #mobile-menu-panel .modal-body .srch-pnl,
+.esdcroot #mobile-menu-panel .modal-body .lng-ofr,
+.esdcroot #mobile-menu-panel .modal-body #info-pnl {
+  display: none;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl {
+  background: #F9F9F9;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl h3 {
+  display: none;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl ul {
+  margin: 0;
+  padding-top: 50px;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl ul li.no-sect {
+  width: 360px;
+  height: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 1px;
+  font-weight: 100;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl ul li.no-sect a {
+  text-decoration: none;
+  background: #DB277B;
+  color: #F9F9F9;
+  font-size: 45px;
+  font-weight: 100;
+  display: block;
+  position: relative;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl ul li.no-sect a:after {
+  content: '';
+  background: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-double-white.png');
+  width: 30px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl ul li.no-sect:nth-of-type(1) a {
+  background: #063851;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl ul li.no-sect:nth-of-type(2) a {
+  background: #348371;
+}
+.esdcroot #mobile-menu-panel .modal-body #sm-pnl ul li.no-sect:nth-of-type(3) a {
+  background: #B4610E;
+}
+.esdcroot #mobile-menu-panel .mfp-close {
+  color: #2D2B2C;
+}
+.esdcroot .h1,
+.esdcroot .h2,
+.esdcroot .h3,
+.esdcroot .h4,
+.esdcroot .h5,
+.esdcroot .h6,
+.esdcroot h1,
+.esdcroot h2,
+.esdcroot h3,
+.esdcroot h4,
+.esdcroot h5,
+.esdcroot h6,
+.esdcroot ul,
+.esdcroot li,
+.esdcroot p,
+.esdcroot button,
+.esdcroot a {
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #2D2B2C;
+}
+.esdcroot .esdcbutton {
+  border: none;
+  background: black;
+  color: #F9F9F9;
+  font-weight: bold;
+  background-color: #2D2B2C;
+  font-size: 14px;
+  padding: 7px 10px;
+  line-height: 14px;
+  min-width: 80px;
+  text-decoration: none;
+  transition: background-color 250ms ease;
+  opacity: 1;
+}
+.esdcroot .esdcbutton--blue {
+  background: #063851;
+}
+.esdcroot .esdcbutton--green {
+  background: #348371;
+}
+.esdcroot .esdcbutton--yellow {
+  background: #B4610E;
+}
+.esdcroot .esdcbutton--red {
+  background: #841B35;
+}
+.esdcroot .esdcbutton--pink {
+  background: #DB277B;
+}
+.esdcroot .esdcheader .navbar-collapse {
+  padding: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot .esdcheader .navbar-collapse {
+    padding: 0 15px;
+  }
+}
+.esdcroot .esdcheader .esdcnav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+.esdcroot .esdcheader .esdcnav li {
+  display: inline-block;
+  position: relative;
+  background: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hexagon.png');
+  background-repeat: no-repeat;
+  min-width: 70px;
+  min-height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-left: 3px;
+}
+.esdcroot .esdcheader .esdcnav li a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: block;
+  color: #2D2B2C;
+  top: 0;
+  transition: all 250ms ease;
+  padding: 0;
+  line-height: 80px;
+}
+.esdcroot .esdcheader .esdcnav li a:hover,
+.esdcroot .esdcheader .esdcnav li a:focus {
+  background-color: transparent;
+}
+.esdcroot .esdcheader .esdcnav li .hexagon {
+  width: 70px;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  top: -5px;
+  opacity: 0;
+  transition: all 250ms ease;
+  background-repeat: no-repeat;
+}
+.esdcroot .esdcheader .esdcnav li.learn .hexagon--colour {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hexagon-blue.png');
+}
+.esdcroot .esdcheader .esdcnav li.train .hexagon--colour {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hexagon-green.png');
+}
+.esdcroot .esdcheader .esdcnav li.work .hexagon--colour {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hexagon-yellow.png');
+}
+.esdcroot .esdcheader .esdcnav li.serve .hexagon--colour {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hexagon-red.png');
+}
+.esdcroot .esdcheader .esdcnav li:hover .hexagon,
+.esdcroot .esdcheader .esdcnav li:focus .hexagon,
+.esdcroot .esdcheader .esdcnav li.active .hexagon {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
+.esdcroot .esdcheader .esdcnav li:hover a,
+.esdcroot .esdcheader .esdcnav li:focus a,
+.esdcroot .esdcheader .esdcnav li.active a {
+  color: #F9F9F9;
+  top: -5px;
+}
+.esdcroot .esdcheader .esdcnav--fr li {
+  background-size: 100% 100%;
+  min-width: 150px;
+}
+.esdcroot .esdcheader .esdcnav--fr li .hexagon {
+  width: 150px;
+}
+.esdcroot .esdcheader .esdcnav--fr li .hexagon--colour {
+  background-size: 100% 100%;
+}
+.esdcroot .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-train.png');
+  min-height: 234px;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.esdcroot .hero:before {
+  content: '';
+  position: absolute;
+  border-left: 150px solid #F9F9F9;
+  border-top: 140px solid #F9F9F9;
+  border-bottom: 140px solid transparent;
+  border-right: 150px solid transparent;
+  z-index: 0;
+}
+.esdcroot .hero:after {
+  content: '';
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid #F9F9F9;
+  border-right: 15px solid #F9F9F9;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+}
+.esdcroot .hero h1 {
+  border: none;
+  margin-top: .4em;
+  position: relative;
+  z-index: 1;
+  font-size: 64px;
+  line-height: 60px;
+  margin: 31px 0 0 0;
+  padding: 0;
+  background: #F9F9F9;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .esdcroot .hero h1 {
+    padding: 0 15px;
+  }
+}
+.esdcroot .hero p {
+  width: 50%;
+  font-weight: 400;
+  line-height: 1.3;
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.esdcroot .hero p span {
+  background: #F9F9F9;
+}
+@media (max-width: 991px) {
+  .esdcroot .hero p {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+.esdcroot .hr {
+  height: 40px;
+  background: repeating-linear-gradient(-45deg, #D4D4D4, transparent 1px, #D4D4D4 2px);
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/pinangle.png');
+  margin: 0 -15px;
+}
+.esdcroot .hr--hero {
+  position: relative;
+}
+.esdcroot .hr--hero:before {
+  content: '';
+  position: absolute;
+  border-left: 24px solid #F9F9F9;
+  border-top: 20px solid #F9F9F9;
+  border-bottom: 20px solid transparent;
+  border-right: 24px solid transparent;
+  z-index: 0;
+}
+.esdcroot .hr--hero:after {
+  content: '';
+  position: absolute;
+  border-bottom: 40px solid #F9F9F9;
+  border-left: 70px solid transparent;
+  width: 28px;
+  top: 0;
+  right: 0;
+  box-sizing: content-box;
+}
+.esdcroot .hr--stock {
+  margin-top: 32px;
+  height: 48px;
+}
+@media (max-width: 991px) {
+  .esdcroot .hr--stock {
+    height: 28px;
+  }
+}
+.esdcroot .result {
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #2D2B2C;
+  text-align: center;
+  font-size: 34px;
+  line-height: 30px;
+  margin: 50px 0;
+}
+.esdcroot .result span {
+  color: #DB277B;
+  font-weight: bold;
+}
+.esdcroot .quicklinks {
+  display: flex;
+  align-items: start;
+  min-height: 160px;
+  height: 0;
+  height: auto;
+  margin-top: 15px;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+}
+.esdcroot .quicklinks__label {
+  margin: 0;
+  padding-left: 0;
+  font-weight: 400;
+  font-size: 32px;
+  padding-right: 49px;
+  position: relative;
+  height: 97px;
+  margin-right: 15px;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #2D2B2C;
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+}
+.esdcroot .quicklinks__label.first-step {
+  min-width: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks__label {
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+    height: 105px;
+    margin-bottom: 15px;
+    min-width: 0;
+  }
+}
+.esdcroot .quicklinks__label:after {
+  content: '';
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron.png');
+  width: 37px;
+  height: 97px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks__label:after {
+    width: 97px;
+    height: 37px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    top: auto;
+  }
+}
+.esdcroot .quicklinks ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  min-height: 97px;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks ul {
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.esdcroot .quicklinks ul button {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: #2D2B2C;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks ul button {
+    flex: 0 1;
+    margin: 0;
+    min-width: 130px;
+  }
+}
+.esdcroot .quicklinks ul button img {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+}
+.esdcroot .quicklinks ul button span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+.esdcroot .quicklinks ul li {
+  margin-right: 15px;
+  border: none;
+  background: none;
+  width: 30%;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks ul li {
+    margin-bottom: 50px;
+    margin-right: 0;
+    max-width: 33%;
+    width: auto;
+  }
+}
+.esdcroot .quicklinks ul li a {
+  min-width: 130px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: #2D2B2C;
+  text-decoration: none;
+  transition: opacity 250ms ease;
+}
+.esdcroot .quicklinks ul li a:hover,
+.esdcroot .quicklinks ul li a:focus {
+  text-decoration: underline;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks ul li a {
+    margin: 0;
+  }
+}
+.esdcroot .quicklinks ul li a img {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+}
+.esdcroot .quicklinks ul li a span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 46px;
+}
+.esdcroot .quicklinks .first-choices {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  min-height: 97px;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks .first-choices {
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.esdcroot .quicklinks .first-choices button {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: #2D2B2C;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 250ms ease;
+  padding: 0;
+  width: 25%;
+}
+.esdcroot .quicklinks .first-choices button:hover span {
+  text-decoration: underline;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks .first-choices button {
+    flex: 0 1;
+    margin: 0;
+    min-width: 130px;
+  }
+}
+.esdcroot .quicklinks .first-choices button img {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+}
+.esdcroot .quicklinks .first-choices button span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+.esdcroot .quicklinks .first-choices li {
+  margin-right: 15px;
+  border: none;
+  background: none;
+  transition: opacity 250ms ease;
+  width: 18%;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks .first-choices li {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+}
+.esdcroot .quicklinks .first-choices li a {
+  min-width: 130px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: #2D2B2C;
+  text-decoration: none;
+  transition: opacity 250ms ease;
+}
+.esdcroot .quicklinks .first-choices li a:hover,
+.esdcroot .quicklinks .first-choices li a:focus {
+  text-decoration: underline;
+}
+@media (max-width: 991px) {
+  .esdcroot .quicklinks .first-choices li a {
+    margin: 0;
+  }
+}
+.esdcroot .quicklinks .first-choices li a img {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+}
+.esdcroot .quicklinks .first-choices li a span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 46px;
+}
+.esdcroot h2.stack {
+  font-size: 41px;
+  line-height: 33px;
+  margin: 31px 0 6px 0;
+  padding: 0;
+  height: auto;
+}
+.esdcroot h2.stack a {
+  text-decoration: none;
+  color: #2D2B2C;
+}
+.esdcroot h2.stack .top {
+  font-weight: 400;
+  font-size: 31px;
+  display: block;
+}
+.esdcroot h3.substack {
+  font-weight: 400;
+  margin: 0;
+  font-size: 21px;
+  padding-bottom: 18px;
+  padding-left: 0;
+}
+.esdcroot .yourway {
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+@media (max-width: 991px) {
+  .esdcroot .yourway {
+    padding: 0 15px;
+    background-position: bottom right;
+    background-size: 100%;
+    padding-bottom: 120%;
+  }
+}
+.esdcroot .yourway .programs {
+  padding: 0;
+}
+.esdcroot .yourway .programs .program {
+  padding: 0;
+  font-size: 13px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .esdcroot .yourway .programs .program {
+    min-height: 260px;
+  }
+}
+.esdcroot .yourway .programs .program__title {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 45px;
+  margin-bottom: 8px;
+}
+.esdcroot .yourway .programs .program__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.esdcroot .yourway .substack {
+  border-bottom: 1px solid #A9A9A9;
+  padding-left: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .esdcroot .yourway .substack {
+    margin-right: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .tool-results {
+    padding: 0 15px;
+  }
+}
+.esdcroot .tool-results .programs {
+  padding: 0;
+}
+.esdcroot .tool-results .programs .program {
+  padding: 0;
+  font-size: 16px;
+  min-height: 350px;
+  padding-right: 15px;
+}
+@media (max-width: 991px) {
+  .esdcroot .tool-results .programs .program {
+    min-height: 0;
+  }
+}
+.esdcroot .tool-results .programs .program__title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 45px;
+  margin-bottom: 8px;
+}
+.esdcroot .tool-results .programs .program__subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.esdcroot .tool-results .substack {
+  width: 100%;
+  border-bottom: 1px solid #A9A9A9;
+}
+.esdcroot .connected {
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 122px;
+  background-color: #3D3D3D;
+  color: #F9F9F9;
+  margin-bottom: 20px;
+}
+.esdcroot .connected h2 {
+  border: none;
+  font-size: 41px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 31px;
+  margin-bottom: 55px;
+  color: #F9F9F9;
+}
+@media (max-width: 991px) {
+  .esdcroot .connected h2 {
+    font-size: 25px;
+  }
+}
+.esdcroot .connected ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.esdcroot .connected ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+@media (max-width: 991px) {
+  .esdcroot .connected ul li {
+    margin: 0 10px;
+  }
+}
+.esdcroot .connected ul li a {
+  display: block;
+  padding: 5px;
+  border: 2px solid transparent;
+}
+.esdcroot .connected ul li a:focus {
+  border: 2px solid white;
+}
+@media (max-width: 991px) {
+  .esdcroot .connected ul li a img {
+    height: 40px;
+  }
+}
+.esdcroot .trending {
+  background: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/home-trending.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 66%;
+  margin-top: -20px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .esdcroot .trending {
+    padding: 0 15px;
+    background-position: bottom right;
+    background-size: 100%;
+    padding-bottom: 100%;
+  }
+}
+.esdcroot .trending .title {
+  padding-left: 0;
+}
+.esdcroot .trending .title h2.stack {
+  margin-top: 51px;
+}
+.esdcroot .trending .opportunities .opportunity {
+  font-size: 13px;
+}
+.esdcroot .trending .opportunities .opportunity__title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 45px;
+  margin-bottom: 8px;
+}
+.esdcroot .trending .opportunities .opportunity__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot .young .stack,
+  .esdcroot .young .substack {
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .young .initiatives .initiative {
+    margin-bottom: 15px;
+  }
+}
+.esdcroot .young .initiatives .initiative img {
+  width: 100%;
+}
+.esdcroot .young .initiatives .initiative__title {
+  font-size: 22px;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .esdcroot .young .initiatives .initiative__title {
+    padding: 0 15px;
+  }
+}
+.esdcroot .young .initiatives .initiative p {
+  font-size: 16px;
+}
+@media (max-width: 991px) {
+  .esdcroot .young .initiatives .initiative p {
+    padding: 0 15px;
+  }
+}
+.esdcroot .young .initiatives .initiative a {
+  font-size: 15px;
+  font-weight: bold;
+}
+@media (max-width: 991px) {
+  .esdcroot .young .initiatives .initiative a {
+    padding: 0 15px;
+  }
+}
+.esdcroot footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .esdcroot footer {
+    align-items: flex-end;
+  }
+}
+.esdcroot footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .esdcroot footer ul {
+    flex-direction: column;
+  }
+}
+.esdcroot footer ul li {
+  margin-left: 36px;
+  font-size: 11px;
+}
+@media (max-width: 991px) {
+  .esdcroot footer ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+.esdcroot footer ul li:first-of-type {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot footer ul li:first-of-type {
+    list-style: initial;
+    margin-left: 36px;
+    margin-bottom: 15px;
+  }
+}
+.esdcroot footer ul li a {
+  text-decoration: none;
+  color: #3D3D3D;
+  font-family: Arial, sans-serif;
+  display: block;
+}
+@media (max-width: 991px) {
+  .esdcroot .resources {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .resources h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.esdcroot .resources .tabpanel__program {
+  min-height: 170px;
+  margin-bottom: 30px;
+}
+.esdcroot .resources .tabpanel__program h4,
+.esdcroot .resources .tabpanel__program div {
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0;
+}
+.esdcroot .resources .tabpanel__program p {
+  font-size: 14px;
+}
+.esdcroot .resources .tabpanel__program p.deadline {
+  font-size: 12px;
+  font-weight: bold;
+}
+.esdcroot .resources .wb-tabs {
+  padding: 0;
+}
+.esdcroot .resources .wb-tabs li.active:before {
+  content: '';
+  background: #585858;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -10px;
+  left: 5px;
+  transform: skew(45deg);
+}
+.esdcroot .resources .wb-tabs li.active:after {
+  width: 0;
+  height: 0;
+  border-left: 85px solid transparent;
+  border-right: 85px solid transparent;
+  border-top: 10px solid #585858;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: skew(45deg) translateX(-50%);
+}
+.esdcroot .resources .wb-tabs > .tabpanels > details {
+  padding: 40px 30px 25px;
+  margin: 0;
+  border-radius: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot .resources .wb-tabs > .tabpanels > details {
+    padding: 0;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .wb-tabs {
+    border-radius: 0;
+    border: none;
+  }
+}
+.esdcroot .wb-tabs [role=tablist] > li {
+  left: 12px;
+  transform: skew(-45deg);
+  background: transparent;
+  text-transform: uppercase;
+  padding: 0 30px;
+  min-width: 170px;
+  border-bottom: 1px solid #ccc;
+}
+.esdcroot .wb-tabs [role=tablist] > li a {
+  transform: skew(45deg);
+}
+.esdcroot .wb-tabs [role=tablist] > li.active {
+  background: #303030;
+}
+.esdcroot .wb-tabs [role=tablist] > li.active a {
+  border: none;
+  color: #F9F9F9;
+}
+.esdcroot .wb-tabs .tabpanels {
+  margin-top: 7px;
+}
+@media (max-width: 991px) {
+  .esdcroot .wb-tabs .tabpanels .tabpanel {
+    padding: 25px 0;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .wb-tabs .tabpanels {
+    margin-top: 0;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .wb-tabs .tabpanels details {
+    border-bottom: 0;
+  }
+  .esdcroot .wb-tabs .tabpanels details.on .wb-toggle {
+    color: #F9F9F9;
+  }
+  .esdcroot .wb-tabs .tabpanels details.on .wb-toggle:before {
+    background: #303030;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .wb-tabs .tabpanels .wb-toggle {
+    margin: 0;
+    padding: 30px 0;
+    position: relative;
+    padding-left: 30px;
+    left: 41px;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #2D2B2C;
+    text-decoration: none;
+    z-index: 2;
+    width: 75%;
+    padding-left: 40px;
+  }
+  .esdcroot .wb-tabs .tabpanels .wb-toggle:before {
+    content: '';
+    transform: skew(-45deg);
+    background: transparent;
+    text-transform: uppercase;
+    min-width: 170px;
+    border: 1px solid #ccc;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .wb-tabs .tabpanels .wb-toggle:before {
+    width: 100%;
+    left: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .esdcroot .wb-tabs .tabpanels .tgl-panel {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.esdcroot.home .esdcbutton:hover {
+  background-color: #DB277B;
+}
+.esdcroot.home .esdcheader h2.stack {
+  font-size: 60px;
+  line-height: 39px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  height: 81px;
+  padding: 0;
+}
+.esdcroot.home .esdcheader h2.stack span {
+  font-size: 60px;
+}
+.esdcroot.home .esdcheader h2.stack span.top {
+  font-size: 45px;
+}
+.esdcroot.home .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-home.png');
+  min-height: 239px;
+}
+.esdcroot.home .hero:after {
+  display: none;
+}
+.esdcroot.home .hero p {
+  margin-top: 23px;
+}
+.esdcroot.home .quicklinks {
+  min-height: 300px;
+  height: 0;
+  background: repeating-linear-gradient(-45deg, #D4D4D4 0px, transparent 1px, transparent 4px, #D4D4D4 5px);
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/pinangle.png');
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot.home .quicklinks {
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 440px;
+  }
+}
+.esdcroot.home .quicklinks__label:after,
+.esdcroot.home .quicklinks h2:after {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-pink.png');
+}
+@media (max-width: 991px) {
+  .esdcroot.home .quicklinks__label:after,
+  .esdcroot.home .quicklinks h2:after {
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-pink-down.png');
+  }
+}
+.esdcroot.home .quicklinks ul {
+  margin-top: 20px;
+  height: 97px;
+}
+.esdcroot.home .quicklinks ul li {
+  width: 145px;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: opacity 250ms ease;
+  opacity: 1;
+}
+.esdcroot.home .quicklinks:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 22px solid #F9F9F9;
+  border-top: 20.5px solid #F9F9F9;
+  border-bottom: 20.5px solid transparent;
+  border-right: 22px solid transparent;
+}
+.esdcroot.home .quicklinks:after {
+  content: '';
+  position: absolute;
+  border-left: 570px solid transparent;
+  border-top: 44px solid transparent;
+  border-bottom: 44px solid #F9F9F9;
+  border-right: 570px solid #F9F9F9;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+}
+.esdcroot.home .quicklinks .second-step {
+  display: none;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  position: relative;
+  height: 97px;
+  margin-top: 20px;
+}
+.esdcroot.home .quicklinks .second-step .selected-persona {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.esdcroot.home .quicklinks .second-step .selected-persona span {
+  font-size: 16px;
+  line-height: 14px;
+  margin-top: 15px;
+}
+.esdcroot.home .quicklinks .selected-personas {
+  text-align: center;
+  width: 200px;
+  padding-right: 49px;
+}
+.esdcroot.home .quicklinks .selected-personas .looking-for {
+  font-size: 13px;
+}
+@media (max-width: 991px) {
+  .esdcroot.home .quicklinks .selected-personas {
+    padding-right: 0;
+    text-align: center;
+    height: 145px;
+  }
+}
+.esdcroot.home .quicklinks .selected-personas:after {
+  content: '';
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-pink.png');
+  position: absolute;
+  right: 0;
+  height: 97px;
+  width: 37px;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .esdcroot.home .quicklinks .selected-personas:after {
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-pink-down.png');
+    text-align: center;
+    width: 97px;
+    height: 37px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    right: auto;
+    top: auto;
+  }
+}
+.esdcroot.home .quicklinks .back-step {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 250ms ease;
+  color: #2D2B2C;
+  text-decoration: none;
+}
+.esdcroot.home .quicklinks .back-step:hover,
+.esdcroot.home .quicklinks .back-step:focus {
+  text-decoration: underline;
+}
+.esdcroot.home .quicklinks.high-school-student .first-step,
+.esdcroot.home .quicklinks.post-secondary-student .first-step,
+.esdcroot.home .quicklinks.seeker-new-opportunities .first-step,
+.esdcroot.home .quicklinks.parent-teacher .first-step {
+  display: none;
+}
+.esdcroot.home .quicklinks.high-school-student .second-step.selected-personas,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.selected-personas,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.selected-personas,
+.esdcroot.home .quicklinks.parent-teacher .second-step.selected-personas {
+  display: block;
+  width: auto;
+}
+.esdcroot.home .quicklinks.high-school-student .second-step.back-step,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.back-step,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.back-step,
+.esdcroot.home .quicklinks.parent-teacher .second-step.back-step {
+  display: flex;
+}
+.esdcroot.home .quicklinks.high-school-student .second-step.options,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.options,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options,
+.esdcroot.home .quicklinks.parent-teacher .second-step.options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .esdcroot.home .quicklinks.high-school-student .second-step.options,
+  .esdcroot.home .quicklinks.post-secondary-student .second-step.options,
+  .esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options,
+  .esdcroot.home .quicklinks.parent-teacher .second-step.options {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+.esdcroot.home .quicklinks.high-school-student .second-step.options .option,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.options .option,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options .option,
+.esdcroot.home .quicklinks.parent-teacher .second-step.options .option {
+  padding: 0 30px;
+  height: 70%;
+  border-left: 1px solid #A9A9A9;
+  max-width: 210px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .esdcroot.home .quicklinks.high-school-student .second-step.options .option,
+  .esdcroot.home .quicklinks.post-secondary-student .second-step.options .option,
+  .esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options .option,
+  .esdcroot.home .quicklinks.parent-teacher .second-step.options .option {
+    border-left: none;
+    border-top: 1px solid #A9A9A9;
+    padding: 10px 0;
+    max-width: none;
+  }
+}
+.esdcroot.home .quicklinks.high-school-student .second-step.options .option--first,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.options .option--first,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options .option--first,
+.esdcroot.home .quicklinks.parent-teacher .second-step.options .option--first {
+  border-left: none;
+  border-top: none;
+}
+.esdcroot.home .quicklinks.high-school-student .second-step.options .option a,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.options .option a,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options .option a,
+.esdcroot.home .quicklinks.parent-teacher .second-step.options .option a {
+  text-decoration: none;
+  color: #2D2B2C;
+  transition: opacity 250ms ease;
+  opacity: 1;
+}
+.esdcroot.home .quicklinks.high-school-student .second-step.options .option a:hover,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.options .option a:hover,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options .option a:hover,
+.esdcroot.home .quicklinks.parent-teacher .second-step.options .option a:hover,
+.esdcroot.home .quicklinks.high-school-student .second-step.options .option a:focus,
+.esdcroot.home .quicklinks.post-secondary-student .second-step.options .option a:focus,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step.options .option a:focus,
+.esdcroot.home .quicklinks.parent-teacher .second-step.options .option a:focus {
+  text-decoration: underline;
+}
+.esdcroot.home .quicklinks.high-school-student .second-step .option,
+.esdcroot.home .quicklinks.post-secondary-student .second-step .option,
+.esdcroot.home .quicklinks.seeker-new-opportunities .second-step .option,
+.esdcroot.home .quicklinks.parent-teacher .second-step .option {
+  display: none;
+}
+.esdcroot.home .quicklinks.high-school-student .selected-persona.hss {
+  display: flex;
+}
+.esdcroot.home .quicklinks.high-school-student .options .hss {
+  display: flex;
+  align-items: center;
+}
+.esdcroot.home .quicklinks.post-secondary-student .selected-persona.pss {
+  display: flex;
+}
+.esdcroot.home .quicklinks.post-secondary-student .options .pss {
+  display: flex;
+  align-items: center;
+}
+.esdcroot.home .quicklinks.seeker-new-opportunities .selected-persona.sno {
+  display: flex;
+}
+.esdcroot.home .quicklinks.seeker-new-opportunities .options .sno {
+  display: flex;
+  align-items: center;
+}
+.esdcroot.home .quicklinks.parent-teacher .selected-persona.pt {
+  display: flex;
+}
+.esdcroot.home .quicklinks.parent-teacher .options .pt {
+  display: flex;
+  align-items: center;
+}
+.esdcroot.train .esdcbutton:hover {
+  background-color: #348371;
+}
+.esdcroot.train .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-train.png');
+}
+.esdcroot.train .quicklinks__label:after,
+.esdcroot.train .quicklinks h2:after {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-green.png');
+}
+@media (max-width: 991px) {
+  .esdcroot.train .quicklinks__label:after,
+  .esdcroot.train .quicklinks h2:after {
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-green-down.png');
+  }
+}
+.esdcroot.train .yourway {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/train-yourway.png');
+  min-height: 639px;
+}
+.esdcroot.work .esdcbutton:hover {
+  background-color: #B4610E;
+}
+.esdcroot.work .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-work.png');
+}
+.esdcroot.work .quicklinks__label:after,
+.esdcroot.work .quicklinks h2:after {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-yellow.png');
+}
+@media (max-width: 991px) {
+  .esdcroot.work .quicklinks__label:after,
+  .esdcroot.work .quicklinks h2:after {
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-yellow-down.png');
+  }
+}
+.esdcroot.work .yourway {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/work-yourway.png');
+  min-height: 689px;
+}
+.esdcroot.learn .esdcbutton:hover {
+  background-color: #063851;
+}
+.esdcroot.learn .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-learn.png');
+}
+.esdcroot.learn .quicklinks__label:after,
+.esdcroot.learn .quicklinks h2:after {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-blue.png');
+}
+@media (max-width: 991px) {
+  .esdcroot.learn .quicklinks__label:after,
+  .esdcroot.learn .quicklinks h2:after {
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-blue-down.png');
+  }
+}
+.esdcroot.learn .yourway {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/learn-yourway.png');
+  min-height: 673px;
+}
+.esdcroot.resources .esdcbutton:hover {
+  background-color: #DB277B;
+}
+.esdcroot.resources .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-resources.png');
+}
+.esdcroot.resources--job .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-resources-job.png');
+}
+.esdcroot.resources--skills .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-resources-skills.png');
+}
+.esdcroot.resources--tools .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-resources-tools.png');
+}
+.esdcroot.resources--work .hero {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-resources-work.png');
+}
+.esdcroot.resources .quicklinks__label:after,
+.esdcroot.resources .quicklinks h2:after {
+  background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-pink.png');
+}
+@media (max-width: 991px) {
+  .esdcroot.resources .quicklinks__label:after,
+  .esdcroot.resources .quicklinks h2:after {
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/chevron-pink-down.png');
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*Our Way: Additional custom CSS*/
+
+.esdcroot .topics a {
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	align-items: center;
+	background-color: #333;
+	color: #FFF;
+	display: -ms-flexbox;
+	display: flex;
+	font-weight: bold;
+	height: 3.575em;
+	justify-content: center;
+	padding: 5px;
+}
+
+.esdcroot .topics a.learn {
+	background-color: #375F73;
+}
+
+.esdcroot .topics a.train {
+	background-color: #348371;
+}
+
+.esdcroot .topics a.work {
+	background-color: #B4610E;
+}
+
+.esdcroot .topics a:hover,
+.esdcroot .topics a:focus {
+	background-color: #333;
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+	.esdcroot .hero {
+		background: none !important;
+		min-height: auto !important;
+	}
+	
+	.esdcroot .hero h1,
+	.esdcroot.home .hero p {
+		margin-top: 0;
+	}
+	
+	.esdcroot .topics {
+		margin: 0 -15px;
+		padding: 0;
+	}
+	
+	.esdcroot .topics .list-unstyled {
+		margin-bottom: 0;
+	}
+	
+	.esdcroot .topics a {
+		font-size: 125%;
+		height: 2.5em;
+	}
+	
+	.esdcroot.home .quicklinks::before {
+		border: 0;
+	}
+	
+	.esdcroot .trending,
+	.esdcroot .yourway {
+		background: none !important;
+		padding-bottom: 0;
+	}
+	
+	.esdcroot .yourway {
+		min-height: auto !important;
+	}
+}
+
+/*Medium view*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.esdcroot .esdcheader.navbar {
+		min-height: 5.4em;
+	}
+	
+	.esdcroot .topics {
+		right: -15px;
+		width: 970px;
+	}
+	
+	.esdcroot .topics .col-md-9 {
+		width: 69%;
+	}
+	
+	.esdcroot .topics a.learn {
+		background-image: linear-gradient(135deg, #F9F9F9 63px, #375F73 0%);
+		clip-path: polygon(89px 0%, 100% 0%, 100% 100%, 1.5% 100%);
+		padding-left: 85px;
+	}
+
+	.esdcroot .topics a.learn:hover,
+	.esdcroot .topics a.learn:focus {
+		background-image: linear-gradient(135deg, #F9F9F9 63px, #333 0%);
+	}
+}
+
+/*Medium view and over*/
+@media screen and (min-width: 992px) {
+	.esdcroot .esdcheader h2.stack {
+		position: absolute;
+		z-index: 1;
+	}
+	
+	.esdcroot .esdcheader.navbar {
+		border: 0;
+		margin-bottom: 5px;
+	}
+	
+	.esdcroot .topics {
+		position: absolute;
+		top: 0;
+	}
+	
+	.esdcroot .topics li {
+		padding: 0;
+	}
+	
+	.esdcroot .topics a {
+		font-size: 150%;
+	}
+}
+
+/*Large view and over*/
+@media screen and (min-width: 1200px) {
+	.esdcroot .esdcheader.navbar {
+		min-height: 6.25em;
+	}
+	
+	.esdcroot .topics {
+		right: 15px;
+		width: calc(100% - 30px);
+	}
+	
+	.esdcroot .topics .col-md-9 {
+		width: 73%;
+	}
+	
+	.esdcroot.home .topics .col-md-9 {
+		margin-right: 2px;
+	}
+	
+	.esdcroot .topics a {
+		font-size: 175%;
+	}
+	
+	.esdcroot .topics a.learn {
+		background-image: linear-gradient(135deg, #F9F9F9 70px, #375F73 0%);
+		clip-path: polygon(98px 0%, 100% 0%, 100% 100%, 0% 100%);
+		padding-left: 75px;
+	}
+
+	.esdcroot .topics a.learn:hover,
+	.esdcroot .topics a.learn:focus {
+		background-image: linear-gradient(135deg, #F9F9F9 70px, #333 0%);
+	}
+}
+
+@media print {
+	.esdcroot .esdcheader.navbar {
+		display: block;
+	}
+	
+	.esdcroot .topics {
+		position: absolute;
+		right: 15px;
+		top: 0;
+		width: calc(100% - 30px);
+	}
+	
+	.esdcroot .topics .col-md-9 {
+		width: auto;
+	}
+
+	.esdcroot .topics a {
+		height: auto;
+		justify-content: left;
+	}
+}
