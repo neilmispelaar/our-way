@@ -16,6 +16,45 @@
 
 
 /* ==========================================================================
+   Custom Tabs Classes
+   ========================================================================== */
+
+.wb-tabs li a { 
+    font-size: 115%;
+}
+
+.wb-tabs li a { 
+    background-color: #A9A9A9;
+}
+
+.wb-tabs li a:hover { 
+    background-color: #2D2B2C;
+    color: #ffffff;
+}
+
+
+.wb-tabs li.active a { 
+    background-color: #2D2B2C !important;
+    
+}
+
+.wb-tabs li.active a { 
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   Your Way Classes
+   ========================================================================== */
+
+.esdcyouthcampaign .your-way-background{
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/learn-yourway.png');
+    min-height: 673px;
+    background-position: top 0px right 15px;
+    background-repeat: no-repeat;
+}
+
+
+/* ==========================================================================
    Hero Image Classes
    ========================================================================== */
 
@@ -47,6 +86,10 @@
 
 .esdcyouthcampaign .hero {
     background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-resources.png');
+  }
+  
+.esdcyouthcampaign .hero.learn {
+    background-image: url('https://www.canada.ca/content/dam/esdc-edsc/images/campaigns/youth/our-way/hero-learn.png');
   }
 
 .esdcyouthcampaign .hero {
@@ -350,8 +393,6 @@
    background-position-x: 15px;
    background-size: 60%;
 }
-
-
 
 .esdcyouthcampaign ul.trending-opportunities {
     list-style-type: none;
