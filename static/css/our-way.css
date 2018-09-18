@@ -67,14 +67,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
 }
 
 
 .esdcyouthcampaign .header .myheading h1 { 
     border: none;
     margin: 0;
-    padding: 0;
+    padding: 30px 0px 30px 0px;
     font-size: 350% !important;
 }
 
@@ -140,6 +139,25 @@
 /*Small view and under*/
 @media screen and (max-width: 991px) {
     
+    .esdcyouthcampaign .header .myheading { 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .esdcyouthcampaign .header .myheading h1 { 
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: 300% !important; 
+    }
+
+    .esdcyouthcampaign .header .myheading p { 
+        padding: 40px 0px 40px 0px;
+        margin: 0;
+        font-size: 150% !important;
+    }
+
     .esdcyouthcampaign .header .mynavigation { 
         order: 2;
     }
@@ -641,6 +659,18 @@
     background-color: #2D2B2C;
     text-decoration: underline;
     transition: 0.2s ease-in;
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+
+    .esdcyouthcampaign .youth-campaign-link-card svg { 
+        width: 100px;
+    }
+
+    .esdcyouthcampaign .youth-campaign-link-card a {
+        padding: 25px;
+    }
 }
 
 
