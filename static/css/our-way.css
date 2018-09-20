@@ -24,7 +24,7 @@
 }
 
 .esdcyouthcampaign .wb-tabs li a { 
-    background-color: #A9A9A9;
+    background-color: #e9e9e9;
 }
 
 .esdcyouthcampaign .wb-tabs li a:hover { 
@@ -40,6 +40,33 @@
 .esdcyouthcampaign .wb-tabs li.active a { 
     color: #ffffff !important;
 }
+
+.esdcyouthcampaign .wb-tabs ul.tab-resources { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.esdcyouthcampaign .wb-tabs ul.tab-resources li { 
+    width: 33.3%;
+    padding: 10px 25px 25px 25px;
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+
+    .esdcyouthcampaign .wb-tabs ul.tab-resources li { 
+        width: 100%;
+        padding: 00px 10px 10px 10px;
+    }
+}
+
+
 
 /* ==========================================================================
    Your Way Classes
@@ -205,71 +232,94 @@
     }
 }
 
-
 /* ==========================================================================
-   Hero Image Classes (v2)
+   Quick Links Classes
    ========================================================================== */
 
-
-.esdcyouthcampaign .jumbotron { 
-    border-radius: 0px;
-    margin-top: 100px;
-    margin-bottom: 0px;
-    background-image: url('/images/home/hero-home.png');
-    background-repeat: none;
-    background-size: cover;
-    color: #000000;
-}
-
-.esdcyouthcampaign .jumbotron h1 {
-    border-bottom: none;
-    background-color: #f9f9f9;
-    display: inline-block;
-} 
-.esdcyouthcampaign .jumbotron p {
-    background-color: #f9f9f9;
-    display: inline;
+.esdcyouthcampaign .qck-lnks { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: no-wrap;
+    padding: 0px;
+    margin: 40px 0px 40px 0px;
 } 
 
-
-/* The hero image */
-.esdcyouthcampaign .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: url("/images/features/youth-policy.jpg");
-    background-color: black;
-    /* Set a specific height */
-    height: 400px;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-top: 100px
+.esdcyouthcampaign .qck-lnks h2 { 
+    margin: 0px;
+    padding: 0px;
 }
 
-/* Place text in the middle of the image */
-.esdcyouthcampaign .hero-text {
+.esdcyouthcampaign .qck-lnks svg { 
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    transform: scaleY(1.3);
+}
+
+
+.esdcyouthcampaign .qck-lnks ul { 
+    display: flex;
+    align-items: flex-start;
+    align-items: stretch;
+
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.esdcyouthcampaign .qck-lnks ul li { 
+    flex-grow: 1;
+    flex-basis: 100%;    
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+}
+
+.esdcyouthcampaign .qck-lnks ul li a { 
+    display: block;
+    height: 100%;
+    padding: 10px;
+}
+
+.esdcyouthcampaign .qck-lnks ul li a:hover {
+    background-color: #f4f4f4;
+    transition: 0.2s ease-in;
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+    .esdcyouthcampaign .qck-lnks { 
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .esdcyouthcampaign .qck-lnks ul { 
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .esdcyouthcampaign .qck-lnks ul li { 
+        padding: 12px 10px 12px 10px;
+    }
+
+    .esdcyouthcampaign .qck-lnks svg { 
+        transform: rotate(90deg);
+        margin: 20px 0px 20px 0px; 
+     
+    }
 }
 
 /* ==========================================================================
    Button Classes   
    ========================================================================== */
 .esdcyouthcampaign .btn-esdcyouthcampaign { 
-    background-color: #000000;
+    background-color: #000000 !important;
     color: #ffffff !important;
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 .esdcyouthcampaign a.btn-esdcyouthcampaign:hover, 
 .esdcyouthcampaign a.btn-esdcyouthcampaign:focus { 
-    background-color: #DB277B;
+    background-color: #DB277B !important;
     transition: 0.2s ease-in; 
 }
 
