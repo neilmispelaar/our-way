@@ -107,6 +107,12 @@
     font-size: 275% !important;
 }
 
+/* target the French language because words are longer */ 
+.esdcyouthcampaign .header .myheading span[lang="fr"] { 
+    font-size: 130% !important; background-color: red;
+}
+
+
 .esdcyouthcampaign .header .myheading p { 
     padding: 0px 0px 0px 75px;
     margin: 0;
