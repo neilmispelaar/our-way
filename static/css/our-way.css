@@ -205,6 +205,10 @@
         flex-direction: column;
     }
 
+	.esdcyouthcampaign .header .mynavigation ul li { 
+        flex-basis: auto;
+    }
+
     .esdcyouthcampaign .header .mynavigation ul li a {
         padding: 10px 0px 10px 0px;
         font-size: 125%;
